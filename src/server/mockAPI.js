@@ -1,4 +1,6 @@
 const axios = require('axios');
+const dotenv = require('dotenv');
+dotenv.config();
 
 function getSentimentAnalysis(txt) {
   return axios.get('https://api.meaningcloud.com/sentiment-2.1', {
