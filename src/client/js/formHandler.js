@@ -6,10 +6,12 @@ function handleSubmit(event) {
   Client.checkForName(formText);
 
   console.log('::: Form Submitted :::');
-  fetch('http://localhost:3000/test')
+
+  fetch(`http://localhost:3000/test?txt=${formText}`)
     .then(res => res.json())
-    .then(function (res) {
-      document.getElementById('results').innerHTML = res.message;
+    .then(function (data) {
+      console.log(data);
+      document.getElementById('results').innerHTML = data.score_tag;
     });
 }
 
