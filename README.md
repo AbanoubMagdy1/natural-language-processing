@@ -1,14 +1,14 @@
-### This is a natural language processing application
+## This is a natural language processing application
 
 ## API the application use :##
 
-# Meaning cloud api for sentiment analysis
+Meaning cloud api for sentiment analysis
 
 ## This application is using webpack
 
-# To use it in devlopment mode run `npm run build-dev`
+- To use it in devlopment mode run `npm run build-dev`
 
-# To use it in production mode run `npm run build-prod`
+- To use it in production mode run `npm run build-prod`
 
 ## Important dependencies I used in this application
 
