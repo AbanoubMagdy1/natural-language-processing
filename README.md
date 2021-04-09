@@ -1,6 +1,6 @@
 ## This is a natural language processing application
 
-## API the application use :##
+## API the application use :
 
 Meaning cloud api for sentiment analysis
 
