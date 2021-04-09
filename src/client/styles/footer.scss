@@ -1,6 +1,4 @@
 footer {
-  position: absolute;
-  bottom: 1px;
-  left: 50%;
-  transform: translateY(-50%);
+  flex-shrink: 0;
+  margin: 1rem auto;
 }

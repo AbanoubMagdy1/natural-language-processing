@@ -5,10 +5,12 @@
         <title>Test</title>
     </head>
 
-    <body>   
-        <main>
+    <body>  
+        <header>
             <h1>Sentiment analysis for your text!!</h1>
-            <section>
+        </header>
+        <main>
+            <section class="form-section">
                 <form class="" onsubmit="return handleSubmit(event)">
                     <textarea id="text" type="text" name="input" value="" placeholder="Your text"></textarea>
                     <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
@@ -16,7 +18,9 @@
             </section>
 
             <section class="results">
-                <strong>Text results:</strong>
+                <div class="results-header">
+                    <strong>Text results:</strong>
+                </div>
                 <div id="results"></div>
             </section>
         </main>

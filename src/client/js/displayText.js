@@ -1,11 +1,11 @@
-function determinePolarity(polarity) {
+const determinePolarity = polarity => {
   switch (polarity) {
     case 'P+':
       return 'Strongly positive';
     case 'P':
       return 'Positive';
     case 'P+':
-      return 'Strongly positive';
+      return 'Strongly Positive';
     case 'NEU':
       return 'Neutral';
     case 'N+':
@@ -15,16 +15,15 @@ function determinePolarity(polarity) {
     default:
       return 'None';
   }
-}
+};
 
-function displayText(data) {
-  return `
+const displayText = data =>
+  `
         <p>Do the different phrases have the same sentiment ? : ${
           data.agreement === 'AGREEMENT' ? 'Yes' : 'No'
         }</p>
         <p>The accuracy of this analysis : ${data.confidence}%</p>  
         <p>The polarity of your text : ${determinePolarity(data.score_tag)}</p>
     `;
-}
 
-export { displayText };
+export { displayText, determinePolarity };
